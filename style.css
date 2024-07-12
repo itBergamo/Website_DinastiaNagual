@@ -1,0 +1,812 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Poppins:wght@200;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-size: 100%;
+  background: linear-gradient(
+    68.15deg,
+    rgb(228, 221, 204) 16.62%,
+    rgb(250, 233, 186) 85.61%
+  );
+}
+
+.section-titulo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  color: #90c37d;
+}
+
+.section-botao {
+  background-color: #90c37d;
+  color: #fff;
+  width: 248px;
+  height: 64px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.section-botao:hover {
+  background-color: #6f9557;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.conteudo-titulo {
+  font-family: "Cormorant", cursive;
+  font-size: 63px;
+  font-weight: 100;
+  color: #513125;
+  text-align: center;
+
+  padding: 30px;
+}
+
+@media (max-width: 1024px) {
+  .section-titulo {
+    font-size: 17px;
+  }
+
+  .section-botao {
+    width: 200px;
+    height: 56px;
+    font-size: 16px;
+  }
+
+  .conteudo-titulo {
+    font-size: 50px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-titulo {
+    font-size: 15px;
+  }
+
+  .section-botao {
+    width: 180px;
+    height: 48px;
+    font-size: 14px;
+  }
+
+  .conteudo-titulo {
+    font-size: 40px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-titulo {
+    font-size: 13px;
+  }
+
+  .section-botao {
+    width: 160px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .conteudo-titulo {
+    font-size: 30px;
+    padding: 10px;
+  }
+}
+
+/*----------HEADER----------*/
+
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px;
+}
+
+.cabecalho-logo {
+  width: 150px;
+  height: 150px;
+}
+
+.cabecalho-menu {
+  display: flex;
+  gap: 32px;
+}
+
+.cabecalho-menu-item {
+  font-family: "Poppins", sans-serif;
+  color: #90c37d;
+  font-size: 17px;
+}
+
+.user {
+  margin-left: 100px;
+}
+
+.user-image {
+  width: 80px;
+  height: 80px;
+  border: 5px solid #186215;
+  border-radius: 100%;
+  position: relative;
+  bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .cabecalho {
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+  }
+
+  .cabecalho-logo {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 16px;
+  }
+
+  .cabecalho-menu {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .user {
+    margin-left: 0;
+    margin-top: 16px;
+  }
+
+  .user-image {
+    width: 60px;
+    height: 60px;
+    border-width: 4px;
+    bottom: 10px;
+  }
+
+  .cabecalho-menu-item {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cabecalho-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .cabecalho-menu {
+    gap: 8px;
+  }
+
+  .user-image {
+    width: 50px;
+    height: 50px;
+    border-width: 3px;
+    bottom: 5px;
+  }
+
+  .cabecalho-menu-item {
+    font-size: 14px;
+  }
+}
+
+/*----------INTRODUÇÃO----------*/
+.conteudo {
+  margin-bottom: 48px;
+}
+
+.conteudo-introducao {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 150px;
+}
+
+.conteudo-introducao-escrito {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.home-titulo-DN {
+  width: 100%;
+  border-top: 3px solid #513125;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  display: block;
+}
+
+.home-titulo-DN legend {
+  padding: 5px 10px;
+}
+
+.conteudo-introducao-titulo {
+  font-family: "Cormorant", cursive;
+  font-weight: 100;
+  font-size: 94px;
+  color: #513125;
+}
+
+.conteudo-introducao-paragrafo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: #999;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+}
+
+.conteudo-introducao-botao {
+  background-color: transparent;
+  color: #6f9557;
+  width: 130px;
+  height: 64px;
+  border: none;
+  border-bottom: 3px solid #513125;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.conteudo-introducao-botao:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.conteudo-introducao-imagem {
+  width: 770px;
+  height: 770px;
+}
+
+@media (max-width: 1024px) {
+  .conteudo-introducao {
+    padding: 0 80px;
+  }
+
+  .conteudo-introducao-imagem {
+    width: 580px;
+    height: 580px;
+  }
+
+  .conteudo-introducao-titulo {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .conteudo-introducao {
+    flex-direction: column;
+    padding: 0 40px;
+    align-items: center;
+  }
+
+  .conteudo-introducao-escrito {
+    gap: 16px;
+  }
+
+  .conteudo-introducao-titulo {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .conteudo-introducao-paragrafo {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .botoes {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .conteudo-introducao-imagem {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .conteudo-introducao {
+    padding: 0 20px;
+  }
+
+  .conteudo-introducao-titulo {
+    font-size: 36px;
+  }
+
+  .conteudo-introducao-paragrafo {
+    font-size: 14px;
+  }
+
+  .conteudo-introducao-imagem {
+    width: 300px;
+    height: 300px;
+  }
+
+  .conteudo-introducao-botao {
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+/*----------SOBRE----------*/
+
+.conteudo-sobre {
+  background-color: #f4ede5;
+  background-image: url("images/background-sobre.svg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 50px 10px;
+}
+
+.home-titulo-sobre {
+  border-top: 3px solid #513125;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.home-titulo-sobre legend {
+  padding: 5px 10px;
+  margin: 30px 0;
+}
+
+.conteudo-sobre-paragrafo {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 100;
+  color: #999;
+  text-align: center;
+  padding: 0 100px;
+  margin: 30px;
+}
+
+@media (max-width: 1024px) {
+  .home-titulo-sobre {
+    width: 60%;
+  }
+
+  .conteudo-sobre-paragrafo {
+    padding: 0 50px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-titulo-sobre {
+    width: 80%;
+  }
+
+  .conteudo-sobre-paragrafo {
+    padding: 0 30px;
+    font-size: 15px;
+  }
+
+  .home-titulo-sobre legend {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-titulo-sobre {
+    width: 100%;
+  }
+
+  .conteudo-sobre-paragrafo {
+    padding: 0 15px;
+    font-size: 14px;
+    margin: 20px 0;
+  }
+
+  .home-titulo-sobre legend {
+    margin: 15px 0;
+  }
+}
+
+/*----------MISSÃO----------*/
+
+.conteudo-missao {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 100px 0;
+  width: 100%;
+  height: auto;
+}
+
+.conteudo-missao .conteudo-missao-imagem {
+  width: 600px;
+  height: 598px;
+}
+
+.conteudo-missao .conteudo-missao-cabecalho {
+  display: flex;
+  padding-left: 20px;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: relative;
+  bottom: 215px;
+}
+
+.conteudo-missao .home-titulo-missao {
+  border-top: 3px solid #513125;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+
+  display: block;
+  width: 70%;
+}
+
+.conteudo-missao .home-titulo-missao legend {
+  padding: 5px 10px;
+}
+
+.conteudo-missao .conteudo-titulo.titulo-missao {
+  padding: 0;
+  text-align: start;
+}
+
+.conteudo-missao .card-evento {
+  width: 600px;
+  height: 320px;
+  padding: 50px;
+
+  background-color: #90c37d;
+  background-image: url("images/background-card-eventos.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: absolute;
+  top: 1800px;
+  right: 65px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.conteudo-missao .card-evento .card-titulo {
+  font-family: "Cormorant", cursive;
+  font-size: 36px;
+  font-weight: 100;
+  color: #fff;
+}
+
+.conteudo-missao .card-evento .card-paragrafo {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 100;
+  color: #fff;
+  white-space: pre-line;
+}
+
+.conteudo-missao .card-evento .card-botao {
+  background-color: transparent;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid #fff;
+
+  padding: 20px 20px 0 0;
+
+  cursor: pointer;
+}
+
+.conteudo-missao .card-evento .card-botao {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.conteudo-missao .card-momentos {
+  width: 600px;
+  height: 320px;
+  padding: 50px;
+
+  background-color: #186215;
+  background-image: url("images/background-card-eventos.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: absolute;
+  top: 2140px;
+  right: 685px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.conteudo-missao .card-momentos .card-titulo {
+  font-family: "Cormorant", cursive;
+  font-size: 36px;
+  font-weight: 100;
+  color: #fff;
+}
+
+.conteudo-missao .card-momentos .card-paragrafo {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 100;
+  color: #fff;
+  white-space: pre-line;
+}
+
+.conteudo-missao .card-momentos .card-botao {
+  background-color: transparent;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid #fff;
+
+  padding: 20px 20px 0 0;
+
+  cursor: pointer;
+}
+
+.conteudo-missao .card-momentos .card-botao {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.conteudo-missao .card-depoimento {
+  width: 600px;
+  height: 320px;
+  padding: 50px;
+
+  background-color: #f4ede5;
+  background-image: url("images/background-card-eventos.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: absolute;
+  top: 2140px;
+  right: 65px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.conteudo-missao .card-depoimento .card-titulo {
+  font-family: "Cormorant", cursive;
+  font-size: 36px;
+  font-weight: 600;
+  color: #513125;
+}
+
+.conteudo-missao .card-depoimento .card-paragrafo {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  color: #8b8b8b;
+  white-space: pre-line;
+}
+
+.conteudo-missao .card-depoimento .card-botao {
+  background-color: transparent;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #513125;
+
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid #513125;
+
+  padding: 20px 20px 0 0;
+
+  cursor: pointer;
+}
+
+.conteudo-missao .card-depoimento .card-botao {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+@media (max-width: 1024px) {
+  .conteudo-missao {
+    padding: 0 40px;
+    flex-direction: row;
+  }
+
+  .conteudo-missao .conteudo-missao-imagem {
+    width: 400px;
+    height: 399px;
+  }
+
+  .conteudo-missao .conteudo-missao-cabecalho {
+    bottom: 150px;
+    align-items: start;
+  }
+
+  .conteudo-missao .card-evento {
+    position: absolute;
+    width: 400px;
+    height: 140px;
+
+    top: 1510px;
+    right: 145px;
+
+    justify-content: center;
+  }
+
+  .conteudo-missao .card-momentos {
+    position: absolute;
+    width: 400px;
+    height: 140px;
+
+    top: 1665px;
+    right: 560px;
+
+    justify-content: center;
+  }
+
+  .conteudo-missao .card-depoimento {
+    position: absolute;
+    width: 400px;
+    height: 140px;
+
+    top: 1665px;
+    right: 145px;
+
+    justify-content: center;
+  }
+
+  .conteudo-missao .card-evento .card-titulo,
+  .conteudo-missao .card-momentos .card-titulo,
+  .conteudo-missao .card-depoimento .card-titulo {
+    font-size: 16px;
+  }
+
+  .conteudo-missao .card-evento .card-paragrafo,
+  .conteudo-missao .card-momentos .card-paragrafo,
+  .conteudo-missao .card-depoimento .card-paragrafo {
+    font-size: 10px;
+  }
+
+  .conteudo-missao .card-evento .card-botao,
+  .conteudo-missao .card-momentos .card-botao,
+  .conteudo-missao .card-depoimento .card-botao {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .conteudo-missao {
+    padding: 0 40px;
+  }
+
+  .conteudo-missao-imagem {
+    width: 400px;
+    height: 400px;
+  }
+
+  .home-titulo-missao {
+    width: 80%;
+  }
+
+  .card-evento,
+  .card-momentos,
+  .card-depoimento {
+    padding: 30px;
+    height: auto;
+  }
+
+  .card-evento .card-titulo,
+  .card-momentos .card-titulo,
+  .card-depoimento .card-titulo {
+    font-size: 28px;
+  }
+
+  .card-evento .card-paragrafo,
+  .card-momentos .card-paragrafo,
+  .card-depoimento .card-paragrafo {
+    font-size: 15px;
+  }
+
+  .card-evento .card-botao,
+  .card-momentos .card-botao,
+  .card-depoimento .card-botao {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .conteudo-missao {
+    padding: 0 20px;
+  }
+
+  .conteudo-missao-imagem {
+    width: 300px;
+    height: 300px;
+  }
+
+  .home-titulo-missao {
+    width: 100%;
+  }
+
+  .card-evento,
+  .card-momentos,
+  .card-depoimento {
+    padding: 20px;
+  }
+
+  .card-evento .card-titulo,
+  .card-momentos .card-titulo,
+  .card-depoimento .card-titulo {
+    font-size: 24px;
+  }
+
+  .card-evento .card-paragrafo,
+  .card-momentos .card-paragrafo,
+  .card-depoimento .card-paragrafo {
+    font-size: 14px;
+  }
+
+  .card-evento .card-botao,
+  .card-momentos .card-botao,
+  .card-depoimento .card-botao {
+    font-size: 14px;
+  }
+}
+
+/*----------EVENTOS----------*/
+
+.conteudo-eventos-dn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 150px;
+  margin-top: 350px;
+}
