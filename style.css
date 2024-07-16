@@ -87,18 +87,18 @@ body {
 
 @media (max-width: 480px) {
   .section-titulo {
-    font-size: 13px;
+    font-size: 10px;
   }
 
   .section-botao {
-    width: 160px;
-    height: 40px;
-    font-size: 12px;
+    width: 180px;
+    height: 48px;
+    font-size: 14px;
   }
 
   .conteudo-titulo {
     font-size: 30px;
-    padding: 10px;
+    padding: 15px;
   }
 }
 
@@ -143,59 +143,75 @@ body {
 
 @media (max-width: 768px) {
   .cabecalho {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    padding: 16px;
+    padding: 8px;
   }
 
   .cabecalho-logo {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 16px;
+    width: 80px;
+    height: 80px;
+    margin: 0;
   }
 
   .cabecalho-menu {
-    flex-direction: column;
-    gap: 16px;
+    flex-direction: row;
+    gap: 25px;
     align-items: center;
   }
 
   .user {
-    margin-left: 0;
-    margin-top: 16px;
+    margin-left: 20px;
+    margin-top: 0;
   }
 
   .user-image {
-    width: 60px;
-    height: 60px;
-    border-width: 4px;
-    bottom: 10px;
+    width: 40px;
+    height: 40px;
+    border-width: 2px;
+    bottom: 0;
   }
 
   .cabecalho-menu-item {
-    font-size: 15px;
+    font-size: 12px;
   }
 }
 
 @media (max-width: 480px) {
+  .cabecalho {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+  }
+
   .cabecalho-logo {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+    margin: 0;
   }
 
   .cabecalho-menu {
-    gap: 8px;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .user {
+    margin-left: 5px;
+    margin-top: 0;
   }
 
   .user-image {
-    width: 50px;
-    height: 50px;
-    border-width: 3px;
-    bottom: 5px;
+    width: 40px;
+    height: 40px;
+    border-width: 2px;
+    bottom: 0;
   }
 
   .cabecalho-menu-item {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -225,6 +241,7 @@ body {
   border-left: none;
   border-right: none;
   display: block;
+  margin-top: 15px;
 }
 
 .home-titulo-DN legend {
@@ -320,6 +337,12 @@ body {
     width: 400px;
     height: 400px;
   }
+
+  .conteudo-introducao-botao {
+    width: 180px;
+    height: 48px;
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -341,9 +364,9 @@ body {
   }
 
   .conteudo-introducao-botao {
-    width: 100px;
-    height: 50px;
-    font-size: 16px;
+    width: 180px;
+    height: 48px;
+    font-size: 14px;
   }
 }
 
@@ -496,7 +519,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: flex-start;
 }
 
@@ -554,7 +577,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: flex-start;
 }
 
@@ -612,7 +635,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: flex-start;
 }
 
@@ -724,79 +747,146 @@ body {
 @media (max-width: 768px) {
   .conteudo-missao {
     padding: 0 40px;
+    flex-direction: row;
   }
 
-  .conteudo-missao-imagem {
-    width: 400px;
-    height: 400px;
+  .conteudo-missao .conteudo-missao-imagem {
+    width: 300px;
+    height: 299px;
   }
 
-  .home-titulo-missao {
-    width: 80%;
+  .conteudo-missao .conteudo-missao-cabecalho {
+    bottom: 90px;
+    align-items: start;
   }
 
-  .card-evento,
-  .card-momentos,
-  .card-depoimento {
-    padding: 30px;
-    height: auto;
+  .conteudo-missao .home-titulo-missao {
+    width: 100%;
   }
 
-  .card-evento .card-titulo,
-  .card-momentos .card-titulo,
-  .card-depoimento .card-titulo {
-    font-size: 28px;
+  .conteudo-missao .card-evento {
+    position: absolute;
+    width: 300px;
+    height: 140px;
+
+    top: 1520px;
+    right: 105px;
+
+    justify-content: center;
   }
 
-  .card-evento .card-paragrafo,
-  .card-momentos .card-paragrafo,
-  .card-depoimento .card-paragrafo {
-    font-size: 15px;
+  .conteudo-missao .card-momentos {
+    position: absolute;
+    width: 300px;
+    height: 140px;
+
+    top: 1670px;
+    right: 415px;
+
+    justify-content: center;
   }
 
-  .card-evento .card-botao,
-  .card-momentos .card-botao,
-  .card-depoimento .card-botao {
+  .conteudo-missao .card-depoimento {
+    position: absolute;
+    width: 300px;
+    height: 140px;
+
+    top: 1670px;
+    right: 105px;
+
+    justify-content: center;
+  }
+
+  .conteudo-missao .card-evento .card-titulo,
+  .conteudo-missao .card-momentos .card-titulo,
+  .conteudo-missao .card-depoimento .card-titulo {
     font-size: 16px;
+  }
+
+  .conteudo-missao .card-evento .card-paragrafo,
+  .conteudo-missao .card-momentos .card-paragrafo,
+  .conteudo-missao .card-depoimento .card-paragrafo {
+    font-size: 10px;
+  }
+
+  .conteudo-missao .card-evento .card-botao,
+  .conteudo-missao .card-momentos .card-botao,
+  .conteudo-missao .card-depoimento .card-botao {
+    font-size: 10px;
+    text-align: start;
   }
 }
 
 @media (max-width: 480px) {
   .conteudo-missao {
-    padding: 0 20px;
+    padding: 0 10px;
+    flex-direction: row;
   }
 
-  .conteudo-missao-imagem {
-    width: 300px;
-    height: 300px;
+  .conteudo-missao .conteudo-missao-imagem {
+    width: 200px;
+    height: 199px;
   }
 
-  .home-titulo-missao {
+  .conteudo-missao .conteudo-missao-cabecalho {
+    bottom: 55px;
+    align-items: start;
+  }
+
+  .conteudo-missao .home-titulo-missao {
     width: 100%;
   }
 
-  .card-evento,
-  .card-momentos,
-  .card-depoimento {
-    padding: 20px;
+  .conteudo-missao .card-evento {
+    position: absolute;
+    width: 300px;
+    height: 140px;
+
+    top: 1520px;
+    right: 105px;
+
+    justify-content: center;
   }
 
-  .card-evento .card-titulo,
-  .card-momentos .card-titulo,
-  .card-depoimento .card-titulo {
-    font-size: 24px;
+  .conteudo-missao .card-momentos {
+    position: absolute;
+    width: 300px;
+    height: 140px;
+
+    top: 1670px;
+    right: 415px;
+
+    justify-content: center;
   }
 
-  .card-evento .card-paragrafo,
-  .card-momentos .card-paragrafo,
-  .card-depoimento .card-paragrafo {
-    font-size: 14px;
+  .conteudo-missao .card-depoimento {
+    position: absolute;
+    width: 300px;
+    height: 140px;
+
+    top: 1670px;
+    right: 105px;
+
+    justify-content: center;
   }
 
-  .card-evento .card-botao,
-  .card-momentos .card-botao,
-  .card-depoimento .card-botao {
-    font-size: 14px;
+  .conteudo-missao .card-evento .card-titulo,
+  .conteudo-missao .card-momentos .card-titulo,
+  .conteudo-missao .card-depoimento .card-titulo {
+    font-size: 16px;
+  }
+
+  .conteudo-missao .card-evento .card-paragrafo,
+  .conteudo-missao .card-momentos .card-paragrafo,
+  .conteudo-missao .card-depoimento .card-paragrafo {
+    font-size: 10px;
+  }
+
+  .conteudo-missao .card-evento .card-botao,
+  .conteudo-missao .card-momentos .card-botao,
+  .conteudo-missao .card-depoimento .card-botao {
+    font-size: 10px;
+    text-align: start;
   }
 }
 
