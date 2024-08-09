@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Escrever descrição sobre o site" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
     <link href="style.css" rel="stylesheet" type="text/css" />
     <title>Dinastia Nagual</title>
   </head>
@@ -51,7 +55,7 @@
           <div class="botoes">
             <button class="section-botao">Vamos começar</button>
             <button class="conteudo-introducao-botao">
-              Contatos<i class="mdi mdi-phone-in-talk"></i>
+              Contatos <i class="mdi mdi-phone-in-talk"></i>
             </button>
           </div>
         </div>
@@ -69,7 +73,7 @@
           </legend>
         </fieldset>
         <h1 class="conteudo-titulo">
-          A felicidade é uma descisão, não um destino. Realize isso conosco!
+          A felicidade é uma decisão, não um destino. Realize isso conosco!
         </h1>
         <p class="conteudo-sobre-paragrafo">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia at
@@ -81,48 +85,57 @@
       </section>
 
       <section class="conteudo-missao">
-        <img
-          class="conteudo-missao-imagem"
-          src="images/video1_home.jpeg"
-          alt=""
-        />
-        <div class="conteudo-missao-cabecalho">
-          <fieldset class="home-titulo-missao">
-            <legend>
-              <h6 class="section-titulo">QUAL NOSSA MISSÃO?</h6>
-            </legend>
-          </fieldset>
-          <h1 class="conteudo-titulo titulo-missao">Autoconhecimento e cura</h1>
-        </div>
-        <div class="cards">
+        <div class="layout-missao">
+          <img
+            class="conteudo-missao-imagem"
+            src="images/imagem_home_missao.png"
+            alt=""
+          />
+          <div class="conteudo-missao-cabecalho">
+            <fieldset class="home-titulo-missao">
+              <legend>
+                <h6 class="section-titulo">QUAL NOSSA MISSÃO?</h6>
+              </legend>
+            </fieldset>
+            <h1 class="conteudo-titulo titulo-missao">
+              Autoconhecimento e cura
+            </h1>
+          </div>
           <div class="card-evento">
-            <h6 class="card-titulo">Eventos presenciais o ano todo</h6>
-            <p class="card-paragrafo">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            </p>
-            <button class="card-botao">
-              Dê uma olhada em nossa agenda <i class="mdi mdi-arrow-right"></i>
-            </button>
+            <div class="conteudo-cards">
+              <h6 class="card-titulo">Eventos presenciais o ano todo</h6>
+              <p class="card-paragrafo">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              </p>
+              <button class="card-botao">
+                Dê uma olhada em nossa agenda
+                <i class="mdi mdi-arrow-right"></i>
+              </button>
+            </div>
           </div>
           <div class="card-momentos">
-            <h6 class="card-titulo">Lembranças e momentos</h6>
-            <p class="card-paragrafo">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            </p>
-            <button class="card-botao">
-              Confira fotos e vídeos de eventos anteriores
-              <i class="mdi mdi-arrow-right"></i>
-            </button>
+            <div class="conteudo-cards">
+              <h6 class="card-titulo">Lembranças e momentos</h6>
+              <p class="card-paragrafo">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </p>
+              <button class="card-botao">
+                Confira fotos e vídeos de eventos anteriores
+                <i class="mdi mdi-arrow-right"></i>
+              </button>
+            </div>
           </div>
           <div class="card-depoimento">
-            <h6 class="card-titulo">Depoimentos</h6>
-            <p class="card-paragrafo">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            </p>
-            <button class="card-botao">
-              Confira depoimentos dos participantes
-              <i class="mdi mdi-arrow-right"></i>
-            </button>
+            <div class="conteudo-cards">
+              <h6 class="card-titulo">Depoimentos</h6>
+              <p class="card-paragrafo">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+              <button class="card-botao">
+                Confira depoimentos dos participantes
+                <i class="mdi mdi-arrow-right"></i>
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -137,7 +150,7 @@
         <h1 class="conteudo-titulo tiulo-eventos-dn">
           Buscamos levar o amor, a cura e o conhecimento a todos
         </h1>
-        
+
         <div class="grid-imagens-eventos">
           <img
             class="conteudo-eventos-imagem"
@@ -203,7 +216,7 @@
           <div class="card-eventos-dn">
             <h6 class="card-eventos-dn-titulo">Ritos</h6>
             <p class="card-eventos-dn-paragrafo">
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
               ullam voluptas qui debitis.
             </p>
             <button class="card-eventos-dn-botao">
@@ -214,7 +227,7 @@
           <div class="card-eventos-dn">
             <h6 class="card-eventos-dn-titulo">Encontros de Mulheres</h6>
             <p class="card-eventos-dn-paragrafo">
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
               ullam voluptas qui debitis.
             </p>
             <button class="card-eventos-dn-botao">
@@ -225,7 +238,7 @@
           <div class="card-eventos-dn">
             <h6 class="card-eventos-dn-titulo">Consagrações</h6>
             <p class="card-eventos-dn-paragrafo">
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
               ullam voluptas qui debitis.
             </p>
             <button class="card-eventos-dn-botao">
@@ -236,7 +249,7 @@
           <div class="card-eventos-dn">
             <h6 class="card-eventos-dn-titulo">Jogos Inteligentes</h6>
             <p class="card-eventos-dn-paragrafo">
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
               ullam voluptas qui debitis.
             </p>
             <button class="card-eventos-dn-botao">
@@ -247,73 +260,81 @@
       </section>
 
       <section class="conteudo-ponteiros">
-        <div class="ponteiros-dn" class="ponteiros-dn">
-          <i class="mdi mdi-emoticon-outline"></i>
-          <h1
-            class="quantitativo-ponteiros-dn"
-            class="quantitativo-ponteiros-dn"
-          >
-            950+
-          </h1>
-          <span class="txt-ponteiros-dn" class="txt-ponteiros-dn"
-            >Pessoas Transformadas</span
-          >
-        </div>
-        <div class="ponteiros-dn">
-          <i class="mdi mdi-account-group"></i>
-          <h1 class="quantitativo-ponteiros-dn">20+</h1>
-          <span class="txt-ponteiros-dn">Desbravadores do Conhecimento</span>
-        </div>
-        <div class="ponteiros-dn">
-          <i class="mdi mdi-forum"></i>
-          <h1 class="quantitativo-ponteiros-dn">950+</h1>
-          <span class="txt-ponteiros-dn">Depoimentos Positivos</span>
-        </div>
-        <div class="ponteiros-dn">
-          <i class="mdi mdi-flower-tulip"></i>
-          <h1 class="quantitativo-ponteiros-dn">30+</h1>
-          <span class="txt-ponteiros-dn">Anos de Experiência</span>
-        </div>
-        <div class="ponteiros-dn">
-          <i class="mdi mdi-home-group"></i>
-          <h1 class="quantitativo-ponteiros-dn">10+</h1>
-          <span class="txt-ponteiros-dn">Cidades Visitadas</span>
+        <div class="layout-ponteiros">
+          <div class="ponteiros-dn">
+            <img src="images/vector-smile.png" />
+            <h1
+              class="quantitativo-ponteiros-dn"
+              class="quantitativo-ponteiros-dn"
+            >
+              950+
+            </h1>
+            <span class="txt-ponteiros-dn" class="txt-ponteiros-dn"
+              >Pessoas Transformadas</span
+            >
+          </div>
+          <div class="ponteiros-dn">
+            <img src="images/vector-people.png" />
+            <h1 class="quantitativo-ponteiros-dn">20+</h1>
+            <span class="txt-ponteiros-dn">Desbravadores do Conhecimento</span>
+          </div>
+          <div class="ponteiros-dn">
+            <img src="images/vector-conversation.png" />
+            <h1 class="quantitativo-ponteiros-dn">950+</h1>
+            <span class="txt-ponteiros-dn">Depoimentos Positivos</span>
+          </div>
+          <div class="ponteiros-dn">
+            <img src="images/vector-flower.png" />
+            <h1 class="quantitativo-ponteiros-dn">30+</h1>
+            <span class="txt-ponteiros-dn">Anos de Experiência</span>
+          </div>
+          <div class="ponteiros-dn">
+            <img src="images/vector-home.png" />
+            <h1 class="quantitativo-ponteiros-dn">10+</h1>
+            <span class="txt-ponteiros-dn">Cidades Visitadas</span>
+          </div>
         </div>
       </section>
 
       <section class="conteudo-grupo">
-        <div class="conteudo-grupo-cabecalho">
-          <h6 class="section-titulo">O GRUPO</h6>
-          <h1 class="conteudo-titulo">Pessoas que trabalham para servir</h1>
-          <p class="conteudo-grupo-paragrafo">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-            in animi aperiam minima eius, perferendis quisquam blanditiis
-            tempora tempore expedita commodi suscipit, adipisci exercitationem
-            eum quo consequuntur consequatur, a placeat.
-          </p>
-          <button class="section-botao">
-            Veja mais <i class="mdi mdi-arrow-right"></i>
-          </button>
-        </div>
-        <div class="conteudo-grupo-participantes">
-          <i class="mdi mdi-arrow-right"></i>
-          <div class="card-participante">
-            <img
-              class="card-participante-imagem"
-              src="images/image7_home.jpeg"
-              alt=""
-            />
-            <h6 class="card-participante-nome">Isabela Bergamo</h6>
+        <div class="layout-grupo">
+          <div class="conteudo-grupo-cabecalho">
+            <fieldset class="home-titulo-grupo">
+              <legend>
+                <h6 class="section-titulo">O GRUPO</h6>
+              </legend>
+            </fieldset>
+            <h1 class="conteudo-titulo">Pessoas que trabalham para servir</h1>
+            <p class="conteudo-grupo-paragrafo">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores in animi aperiam minima eius, perferendis quisquam
+              blanditiis tempora tempore expedita commodi suscipit, adipisci
+              exercitationem eum quo consequuntur consequatur, a placeat.
+            </p>
+            <button class="section-botao">
+              Veja mais <i class="mdi mdi-arrow-right"></i>
+            </button>
           </div>
-          <div class="card-participante">
-            <img
-              class="card-participante-imagem"
-              src="images/image8_home.jpeg"
-              alt=""
-            />
-            <h6 class="card-participante-nome">Vanderlei Carneosso</h6>
+          <div class="conteudo-grupo-participantes">
+            <i class="mdi mdi-arrow-right"></i>
+            <div class="card-participante"> 
+              <img
+                class="card-participante-imagem"
+                src="images/image7_home.jpeg"
+                alt=""
+              />
+              <h6 class="card-participante-nome">Isabela Bergamo</h6>
+            </div>
+            <div class="card-participante">
+              <img
+                class="card-participante-imagem"
+                src="images/image8_home.jpeg"
+                alt=""
+              />
+              <h6 class="card-participante-nome">Vanderlei Carneosso</h6>
+            </div>
+            <i class="mdi mdi-arrow-left"></i>
           </div>
-          <i class="mdi mdi-arrow-left"></i>
         </div>
       </section>
 

@@ -7,14 +7,6 @@
   text-decoration: none;
 }
 
-.conteudo {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-
 body {
   font-size: 100%;
   background: linear-gradient(to right, rgb(255, 238, 197), rgb(255, 221, 129));
@@ -558,87 +550,86 @@ body {
 /*----------MISSÃO----------*/
 
 .conteudo-missao {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  padding: 10px;
-  margin: 100px 0;
   width: 100%;
-  height: auto;
+  margin: 100px 0;
 }
 
-.conteudo-missao .conteudo-missao-imagem {
-  width: 600px;
-  height: 598px;
-  margin-left: 35px;
+.layout-missao {
+  display: grid;
+  grid-template-areas:
+    "conteudo-missao-imagem conteudo-missao-cabecalho"
+    "conteudo-missao-imagem card-evento"
+    "card-momentos card-depoimento";
+  justify-content: center;
+  gap: 15px;
 }
 
-.conteudo-missao .conteudo-missao-cabecalho {
-  display: flex;
-  padding-left: 20px;
-  justify-content: flex-start;
-  flex-direction: column;
-  position: relative;
-  bottom: 215px;
+.conteudo-missao-imagem {
+  width: 460px;
+  grid-area: conteudo-missao-imagem;
 }
 
-.conteudo-missao .home-titulo-missao {
+.conteudo-missao-cabecalho {
+  grid-area: conteudo-missao-cabecalho;
+}
+
+.home-titulo-missao {
   border-top: 3px solid #513125;
   border-bottom: none;
   border-left: none;
   border-right: none;
 
   display: block;
-  width: 70%;
+  width: 100%;
 }
 
-.conteudo-missao .home-titulo-missao legend {
+.home-titulo-missao legend {
   padding: 5px 10px;
 }
 
-.conteudo-missao .conteudo-titulo.titulo-missao {
+.conteudo-titulo.titulo-missao {
   padding: 0;
   text-align: start;
 }
 
-.conteudo-missao .card-evento {
-  width: 600px;
-  height: 320px;
-  padding: 50px;
+.conteudo-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding: 10px;
+  gap: 30px;
+}
+
+.card-evento {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  padding: 5px;
+
+  grid-area: card-evento;
 
   background-color: #90c37d;
   background-image: url("images/background-card-eventos.svg");
   background-repeat: no-repeat;
   background-size: cover;
-
-  position: absolute;
-  top: 1800px;
-  right: 65px;
-
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
 }
 
-.conteudo-missao .card-evento .card-titulo {
+.card-evento .card-titulo {
   font-family: "Cormorant", cursive;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 100;
   color: #fff;
 }
 
-.conteudo-missao .card-evento .card-paragrafo {
+.card-evento .card-paragrafo {
   font-family: "Poppins", sans-serif;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 100;
   color: #fff;
-  white-space: pre-line;
 }
 
-.conteudo-missao .card-evento .card-botao {
+.card-evento .card-botao {
   background-color: transparent;
 
   font-family: "Poppins", sans-serif;
@@ -651,56 +642,42 @@ body {
   border-left: none;
   border-bottom: 2px solid #fff;
 
-  padding: 20px 20px 0 0;
-
   cursor: pointer;
 }
 
-.conteudo-missao .card-evento .card-botao {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-}
+.card-momentos {
+  width: 100%;
+  max-width: 460px;
+  height: 200px;
+  padding: 5px;
 
-.conteudo-missao .card-momentos {
-  width: 600px;
-  height: 320px;
-  padding: 50px;
+  grid-area: card-momentos;
 
   background-color: #186215;
   background-image: url("images/background-card-eventos.svg");
   background-repeat: no-repeat;
   background-size: cover;
-
-  position: absolute;
-  top: 2140px;
-  right: 685px;
-
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
 }
 
-.conteudo-missao .card-momentos .card-titulo {
+.card-momentos .card-titulo {
   font-family: "Cormorant", cursive;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 100;
   color: #fff;
 }
 
-.conteudo-missao .card-momentos .card-paragrafo {
+.card-momentos .card-paragrafo {
   font-family: "Poppins", sans-serif;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 100;
   color: #fff;
-  white-space: pre-line;
 }
 
-.conteudo-missao .card-momentos .card-botao {
+.card-momentos .card-botao {
   background-color: transparent;
 
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 300;
   color: #fff;
 
@@ -709,56 +686,42 @@ body {
   border-left: none;
   border-bottom: 2px solid #fff;
 
-  padding: 20px 20px 0 0;
-
   cursor: pointer;
 }
 
-.conteudo-missao .card-momentos .card-botao {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-}
+.card-depoimento {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  padding: 5px;
 
-.conteudo-missao .card-depoimento {
-  width: 600px;
-  height: 320px;
-  padding: 50px;
+  grid-area: card-depoimento;
 
   background-color: #f4ede5;
   background-image: url("images/background-card-eventos.svg");
   background-repeat: no-repeat;
   background-size: cover;
-
-  position: absolute;
-  top: 2140px;
-  right: 65px;
-
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
 }
 
-.conteudo-missao .card-depoimento .card-titulo {
+.card-depoimento .card-titulo {
   font-family: "Cormorant", cursive;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 600;
   color: #513125;
 }
 
-.conteudo-missao .card-depoimento .card-paragrafo {
+.card-depoimento .card-paragrafo {
   font-family: "Poppins", sans-serif;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 300;
   color: #8b8b8b;
-  white-space: pre-line;
 }
 
-.conteudo-missao .card-depoimento .card-botao {
+.card-depoimento .card-botao {
   background-color: transparent;
 
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 500;
   color: #513125;
 
@@ -767,32 +730,31 @@ body {
   border-left: none;
   border-bottom: 2px solid #513125;
 
-  padding: 20px 20px 0 0;
-
   cursor: pointer;
 }
 
-.conteudo-missao .card-depoimento .card-botao {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+.card-botao:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
+/*
 @media (max-width: 1024px) {
   .conteudo-missao {
     padding: 0 40px;
     flex-direction: row;
   }
 
-  .conteudo-missao .conteudo-missao-imagem {
+  .conteudo-missao-imagem {
     width: 400px;
     height: 399px;
   }
 
-  .conteudo-missao .conteudo-missao-cabecalho {
+  .conteudo-missao-cabecalho {
     bottom: 150px;
     align-items: start;
   }
 
-  .conteudo-missao .card-evento {
+  .card-evento {
     position: absolute;
     width: 400px;
     height: 140px;
@@ -803,7 +765,7 @@ body {
     justify-content: center;
   }
 
-  .conteudo-missao .card-momentos {
+  .card-momentos {
     position: absolute;
     width: 400px;
     height: 140px;
@@ -814,7 +776,7 @@ body {
     justify-content: center;
   }
 
-  .conteudo-missao .card-depoimento {
+  .card-depoimento {
     position: absolute;
     width: 400px;
     height: 140px;
@@ -825,21 +787,21 @@ body {
     justify-content: center;
   }
 
-  .conteudo-missao .card-evento .card-titulo,
-  .conteudo-missao .card-momentos .card-titulo,
-  .conteudo-missao .card-depoimento .card-titulo {
+  .card-evento .card-titulo,
+  .card-momentos .card-titulo,
+  .card-depoimento .card-titulo {
     font-size: 16px;
   }
 
-  .conteudo-missao .card-evento .card-paragrafo,
-  .conteudo-missao .card-momentos .card-paragrafo,
-  .conteudo-missao .card-depoimento .card-paragrafo {
+  .card-evento .card-paragrafo,
+  .card-momentos .card-paragrafo,
+  .card-depoimento .card-paragrafo {
     font-size: 10px;
   }
 
-  .conteudo-missao .card-evento .card-botao,
-  .conteudo-missao .card-momentos .card-botao,
-  .conteudo-missao .card-depoimento .card-botao {
+  .card-evento .card-botao,
+  .card-momentos .card-botao,
+  .card-depoimento .card-botao {
     font-size: 10px;
   }
 }
@@ -850,21 +812,21 @@ body {
     flex-direction: row;
   }
 
-  .conteudo-missao .conteudo-missao-imagem {
+  .conteudo-missao-imagem {
     width: 300px;
     height: 299px;
   }
 
-  .conteudo-missao .conteudo-missao-cabecalho {
+  .conteudo-missao-cabecalho {
     bottom: 90px;
     align-items: start;
   }
 
-  .conteudo-missao .home-titulo-missao {
+  .home-titulo-missao {
     width: 100%;
   }
 
-  .conteudo-missao .card-evento {
+  .card-evento {
     position: absolute;
     width: 300px;
     height: 140px;
@@ -875,7 +837,7 @@ body {
     justify-content: center;
   }
 
-  .conteudo-missao .card-momentos {
+  .card-momentos {
     position: absolute;
     width: 300px;
     height: 140px;
@@ -886,7 +848,7 @@ body {
     justify-content: center;
   }
 
-  .conteudo-missao .card-depoimento {
+  .card-depoimento {
     position: absolute;
     width: 300px;
     height: 140px;
@@ -897,21 +859,21 @@ body {
     justify-content: center;
   }
 
-  .conteudo-missao .card-evento .card-titulo,
-  .conteudo-missao .card-momentos .card-titulo,
-  .conteudo-missao .card-depoimento .card-titulo {
+  .card-evento .card-titulo,
+  .card-momentos .card-titulo,
+  .card-depoimento .card-titulo {
     font-size: 16px;
   }
 
-  .conteudo-missao .card-evento .card-paragrafo,
-  .conteudo-missao .card-momentos .card-paragrafo,
-  .conteudo-missao .card-depoimento .card-paragrafo {
+  .card-evento .card-paragrafo,
+  .card-momentos .card-paragrafo,
+  .card-depoimento .card-paragrafo {
     font-size: 10px;
   }
 
-  .conteudo-missao .card-evento .card-botao,
-  .conteudo-missao .card-momentos .card-botao,
-  .conteudo-missao .card-depoimento .card-botao {
+  .card-evento .card-botao,
+  .card-momentos .card-botao,
+  .card-depoimento .card-botao {
     font-size: 10px;
     text-align: start;
   }
@@ -923,21 +885,21 @@ body {
     flex-direction: row;
   }
 
-  .conteudo-missao .conteudo-missao-imagem {
+  .conteudo-missao-imagem {
     width: 200px;
     height: 199px;
   }
 
-  .conteudo-missao .conteudo-missao-cabecalho {
+  .conteudo-missao-cabecalho {
     bottom: 55px;
     align-items: start;
   }
 
-  .conteudo-missao .home-titulo-missao {
+  .home-titulo-missao {
     width: 100%;
   }
 
-  .conteudo-missao .card-evento {
+  .card-evento {
     position: absolute;
     width: 240px;
     height: 165px;
@@ -948,7 +910,7 @@ body {
     justify-content: center;
   }
 
-  .conteudo-missao .card-momentos {
+  .card-momentos {
     position: absolute;
     width: 240px;
     height: 165px;
@@ -959,7 +921,7 @@ body {
     justify-content: center;
   }
 
-  .conteudo-missao .card-depoimento {
+  .card-depoimento {
     position: absolute;
     width: 240px;
     height: 165px;
@@ -970,21 +932,21 @@ body {
     justify-content: center;
   }
 
-  .conteudo-missao .card-evento .card-titulo,
-  .conteudo-missao .card-momentos .card-titulo,
-  .conteudo-missao .card-depoimento .card-titulo {
+  .card-evento .card-titulo,
+  .card-momentos .card-titulo,
+  .card-depoimento .card-titulo {
     font-size: 16px;
   }
 
-  .conteudo-missao .card-evento .card-paragrafo,
-  .conteudo-missao .card-momentos .card-paragrafo,
-  .conteudo-missao .card-depoimento .card-paragrafo {
+  .card-evento .card-paragrafo,
+  .card-momentos .card-paragrafo,
+  .card-depoimento .card-paragrafo {
     font-size: 10px;
   }
 
-  .conteudo-missao .card-evento .card-botao,
-  .conteudo-missao .card-momentos .card-botao,
-  .conteudo-missao .card-depoimento .card-botao {
+  .card-evento .card-botao,
+  .card-momentos .card-botao,
+  .card-depoimento .card-botao {
     font-size: 10px;
     text-align: start;
   }
@@ -997,29 +959,29 @@ body {
     align-items: center;
   }
 
-  .conteudo-missao .conteudo-missao-imagem {
+  .conteudo-missao-imagem {
     width: 300px;
     height: 299px;
     align-items: center;
   }
 
-  .conteudo-missao .conteudo-missao-cabecalho {
+  .conteudo-missao-cabecalho {
     bottom: 375px;
     align-items: center;
     padding-left: 0;
   }
 
-  .conteudo-missao .home-titulo-missao {
+  .home-titulo-missao {
     width: 100%;
   }
 
-  .conteudo-missao .cards {
+  .cards {
     position: absolute;
     right: 20px;
     top: -35px;
   }
 
-  .conteudo-missao .card-evento {
+  .card-evento {
     position: absolute;
     width: 300px;
     height: 165px;
@@ -1030,7 +992,7 @@ body {
     justify-content: center;
   }
 
-  .conteudo-missao .card-momentos {
+  .card-momentos {
     position: absolute;
     width: 300px;
     height: 165px;
@@ -1041,7 +1003,7 @@ body {
     justify-content: center;
   }
 
-  .conteudo-missao .card-depoimento {
+  .card-depoimento {
     position: absolute;
     width: 300px;
     height: 165px;
@@ -1052,28 +1014,28 @@ body {
     justify-content: center;
   }
 
-  .conteudo-missao .card-evento .card-titulo,
-  .conteudo-missao .card-momentos .card-titulo,
-  .conteudo-missao .card-depoimento .card-titulo {
+  .card-evento .card-titulo,
+  .card-momentos .card-titulo,
+  .card-depoimento .card-titulo {
     font-size: 16px;
   }
 
-  .conteudo-missao .card-evento .card-paragrafo,
-  .conteudo-missao .card-momentos .card-paragrafo,
-  .conteudo-missao .card-depoimento .card-paragrafo {
+  .card-evento .card-paragrafo,
+  .card-momentos .card-paragrafo,
+  .card-depoimento .card-paragrafo {
     font-size: 10px;
   }
 
-  .conteudo-missao .card-evento .card-botao,
-  .conteudo-missao .card-momentos .card-botao,
-  .conteudo-missao .card-depoimento .card-botao {
+  .card-evento .card-botao,
+  .card-momentos .card-botao,
+  .card-depoimento .card-botao {
     font-size: 10px;
     text-align: start;
   }
 }
 
 @media (max-width: 390px) {
-  .conteudo-missao .cards {
+  .cards {
     position: absolute;
     right: 8px;
     top: -15px;
@@ -1081,12 +1043,13 @@ body {
 }
 
 @media (max-width: 375px) {
-  .conteudo-missao .cards {
+  .cards {
     position: absolute;
     right: 0px;
     top: 5px;
   }
 }
+*/
 
 /*----------EVENTOS----------*/
 
@@ -1096,7 +1059,7 @@ body {
   align-items: center;
   justify-content: space-around;
   padding: 0 10%;
-  margin-top: 350px;
+  margin-top: 100px;
 }
 
 .home-titulo-eventos {
@@ -1199,6 +1162,10 @@ body {
   cursor: pointer;
 }
 
+.card-eventos-dn-botao:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
 .conteudo-eventos-imagem {
   width: 100%;
   max-width: 300px;
@@ -1224,7 +1191,7 @@ body {
     bottom: 390px;
   }
 
-  .card-eventos-dn-titulo{
+  .card-eventos-dn-titulo {
     font-size: 1.2rem;
   }
 
@@ -1243,8 +1210,94 @@ body {
     padding: 4%;
   }
 }
+
 /*----------PONTEIROS----------*/
 
 .conteudo-ponteiros {
-  margin-top: 240px;
+  margin-top: -400px;
+}
+
+.layout-ponteiros {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;  
+  flex-direction: row;
+  justify-content: center;
+
+  gap: 100px;
+}
+
+.ponteiros-dn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: "Cormorant", cursive;
+  font-size: 30px;
+  font-weight: 100;
+  color: #513125;
+
+  gap: 5px;
+}
+
+/*----------GRUPO----------*/
+.conteudo-grupo {
+  margin: 100px;
+}
+
+.layout-grupo {
+  display: flex;
+  flex-direction: row;
+}
+
+.conteudo-grupo-cabecalho {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.home-titulo-grupo {
+  width: 100%;
+  border-top: 3px solid #513125;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  display: block;
+  margin-top: 15px;
+}
+
+.home-titulo-grupo legend {
+  padding: 5px 10px;
+}
+
+.conteudo-titulo {
+  font-family: "Cormorant", cursive;
+  font-weight: 100;
+  font-size: 55px;
+  color: #513125;
+  text-align: start;
+  padding: 0;
+}
+
+.conteudo-grupo-participantes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-participante {
+  background: #6F9557;
+  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  height: 300px;
+  padding: 20px;
+}
+
+.card-participante-imagem {
+  width: 100%;
 }
