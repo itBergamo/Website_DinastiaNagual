@@ -26,14 +26,16 @@
           >Páginas <i class="mdi mdi-arrow-down"></i
         ></a>
         <a class="cabecalho-menu-item">Contato</a>
-        <a class="cabecalho-menu-item user"
-          ><i class="mdi mdi-arrow-down"></i> Usuário</a
-        >
-        <img
-          class="cabecalho-menu-item user-image"
-          src="images/image7_home.jpeg"
-          alt=""
-        />
+        <div class="foto-usuario">
+          <a class="cabecalho-menu-item user"
+            ><i class="mdi mdi-arrow-down"></i> Usuário</a
+          >
+          <img
+            class="cabecalho-menu-item user-image"
+            src="images/image7_home.jpeg"
+            alt=""
+          />
+        </div>
       </nav>
     </header>
 
@@ -72,7 +74,7 @@
             <h6 class="section-titulo">SOBRE O DINASTIA NAGUAL</h6>
           </legend>
         </fieldset>
-        <h1 class="conteudo-titulo">
+        <h1 class="conteudo-titulo titulo-sobre">
           A felicidade é uma decisão, não um destino. Realize isso conosco!
         </h1>
         <p class="conteudo-sobre-paragrafo">
@@ -316,8 +318,10 @@
             </button>
           </div>
           <div class="conteudo-grupo-participantes">
-            <i class="mdi mdi-arrow-right"></i>
-            <div class="card-participante"> 
+            <button class="btn-grupo">
+              <i class="mdi mdi-arrow-left"></i>
+            </button>
+            <div class="card-participante">
               <img
                 class="card-participante-imagem"
                 src="images/image7_home.jpeg"
@@ -333,7 +337,9 @@
               />
               <h6 class="card-participante-nome">Vanderlei Carneosso</h6>
             </div>
-            <i class="mdi mdi-arrow-left"></i>
+            <button class="btn-grupo">
+              <i class="mdi mdi-arrow-right"></i>
+            </button>
           </div>
         </div>
       </section>
